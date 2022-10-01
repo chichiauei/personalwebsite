@@ -1,144 +1,40 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jiawei's website</title>
+    <title>Verification</title>
     <link rel='icon'  href='small.ico'  type='image/x-ico'  />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="lock.css">
+    
+
+
+<script type="text/javascript">
+    function validate(){
+        if(document.getElementById("Qi").checked == true){
+            window.location.href = "index.html";
+        }
+        else alert("Wrong, You're not allowed to enter.");
+        }
+</script>
+
+
+
 </head>
-
-
 <body>
-    <header>
-    
-    <img src="selfie.jpg" class="profile-img">
-    <!-- <img src="skydive.jpg" class="profile-img"> -->
-    <nav class="navbar">
-            <a href="#"><img src="scshort.png" class="logo"></a>
-        <div class="nav-list" >
-                <a href="#About me"> About</a>
-                <a href="#favorite"> Q&A</a>
-                <a href="#My resume"> Resume</a>
-                <a href="#Contact me"> Contact</a>
-            
-        </div>
+    <div class="content">
 
+    <p><h1 class="question">What's my surname?</h1></p>
 
+    <form>
+      <input type="radio" id="Qi" name="name" value="Qi">
+      <label for="Qi">Qi</label><br>
+      <input type="radio" id="Chi" name="name" value="Chi">
+      <label for="Chi">Chi</label><br>
+      <input type="radio" id="Xi" name="name" value="Xi">
+      <label for="Xi">Xi</label>
+    </form>
 
-    </nav>
+    <button onclick="validate();">Submit</button>
 
-    </header>
-
-    <main>
-        <section id="About me">
-            <div class="about">
-                <h1>Hi, folks. My name is <span style="color:rgba(160, 102, 236, 0.9)">J</span>iawei <span style="color:rgba(160, 102, 236, 0.9)">Q</span>i.</h1>
-                <h2>“So do all who live to see such times. But that is not for them to decide. All we have to decide is <span style="color:rgba(160, 102, 236, 0.9)">what to do with the time that is given us</span>.”<br>
-                    <br>
-                    <h3>In the life, I am an <span style="color:rgba(160, 102, 236, 0.9)">optimistic challenger</span>: I actively sought out opportunities that will leave me in a challenging situation because I know they will help me further develop persistence for my future. I am truly a <span style="color:rgba(160, 102, 236, 0.9)">collaborator</span>: I live by the rule of seeking to understand before being understood. My belief comes from the spirit of Son Goku. What doesn't kill me makes me stronger.
-                    At work, I am a motivated, personable team player with experience in full-stack web development. I am a hardworking, pro-active software development engineer with the background in Java, C++, JavaScript, Python, SQL, HTML, and CSS. My Intrinsic motivation for Computer Science is from my deep-rooted belief:  <span style="color:rgba(160, 102, 236, 0.9)">Satisfaction brought by the pure sense of accomplishment and collaboration</span>.<br> <br></h3>
-                    <h3 class="tec">
-                    Programming Languages: Java, C++, JavaScript, Python, SQL, HTML, CSS<br>
-                    Technologies: Restful API, Bootstrap, Svelte, Maven, Grade, Docker, RabbitMQ, Linux, Git, Firebase, AWS, Heroku <br>
-                    Framework: Spring, React, Redux, Node.js, Express.js, Angular, Bootstrap, VUE.js <br>
-                    Database: MongoDB, MySQL, Redis, Microsoft Access, Oracle SQL<br>
-                    </h3>
-                </h2>
-            </div>
-            <br>
-            <br>
-            <hr class="rounded">
-        </section>
-
-
-        <section id="favorite">
-            <div class="fav">
-                <h1>Q&A about me</h1>
-
-            <table style="color: whitesmoke;">
-                <tr>
-                  <th>Questions</th>
-                  <th>Answers</th>
-                </tr>
-                <tr>
-                  <td>Favorite Actor</td>
-                  <td>Alfredo Pacino</td>
-                </tr>
-                <tr>
-                  <td>Favorite Film</td>
-                  <td>Once Upon a Time in America</td>
-                </tr>
-                <tr>
-                    <td>Favorite number</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>Favorite color</td>
-                    <td>Black</td>
-                </tr>
-                <tr>
-                    <td>Favorite sport</td>
-                    <td>Basketball</td>
-                </tr>
-                <tr>
-                    <td>Favorite pet</td>
-                    <td>Dog</td>
-                </tr>
-                <tr>
-                    <td>Favorite flower</td>
-                    <td>Jasmine</td>
-                </tr>
-                <tr>
-                    <td>Favorite Food</td>
-                    <td>Ramen</td>
-                </tr>
-                <tr>
-                    <td>Favorite Car</td>
-                    <td>Jaguar</td>
-                </tr>
-              </table>
-              <br>
-              <br>
-            </div>
-
-            <hr class="rounded">
-        </section>
-
-
-        <section id="My resume">
-            <div class="resume"> 
-            <h1>Résumé</h1> 
-            <img src="resume.png" class="resume-img">
-            <button type="button" class="resume-button"><a href="resume_pdf_version.pdf" class="btn btn-primary">Click to download</a></button>
-            </div>
-
-            <hr class="rounded">
-        </section>
-
-        <section id="Contact me">
-            <div class="contact">
-                <h1 > Contact me</h1>
-                <div class="squares">
-                    <a href="mailto:chichiauei@gmail.com" class="fa fa-envelope"></a>
-                    
-                    <a href="https://linkedin.com/in/jiaweiqi" class="fa fa-linkedin"></a>
-                    <a href="https://www.snapchat.com/add/chichiauei666?share_id=QUNDMUVB&locale=en_US" class="fa fa-snapchat-ghost"></a>
-                    <a href="https://github.com/chichiauei" class="fa fa-github"></a>
-                </div>
-            </div>
-
-          
-        </section>
-
-    </main>
-
-    <footer style="color:whitesmoke; margin-top: 5%; float: right;">
-        © Copyright Jiawei Qi | 2022
-    </footer>
-    
-
+    </div>
 
 </body>
 </html>
