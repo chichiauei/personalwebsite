@@ -1,0 +1,186 @@
+
+/* overall */
+
+hr.rounded {
+    border-top: 8px solid rgba(88, 34, 160, 0.9);
+    border-radius: 5px;
+}
+
+
+
+
+
+/*
+nav
+*/
+
+body {
+    background-color: black;
+}
+.navbar{
+    left: 0;
+    right: 0;
+    background-color: rgba(88, 34, 160, 0.9);
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    height: 60px;
+    line-height: 30px;
+    /* transition: height 0.5s; */
+    animation: animateNavbar 1s 0.8s forwards;
+}
+
+.nav-list{
+    margin-right:5%;
+    margin-top: 1%;;
+    float: right;
+    letter-spacing: 0.3rem;
+    
+}
+
+.nav-list a{
+    
+    font-family: 'Oswald',sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    /* border-style: solid;
+    border-color: white; */
+    font-size:larger;
+    
+}
+
+.profile-img{
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/* about me  */
+
+.about{
+    color:whitesmoke;
+}
+
+.tec:hover {background-color: rgba(160, 102, 236, 0.9);}
+
+
+/*favorite*/
+
+.fav{
+    overflow-x:auto;
+}
+
+.fav h1{
+    font-size: 5rem;
+   
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    border-bottom: 1px solid whitesmoke;
+}
+
+tr:hover {background-color: rgba(160, 102, 236, 0.9);}
+
+/* resume */
+
+.resume h1{
+    font-size: 5rem;
+   
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+
+.resume-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume-button{
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* contact me */
+
+/* .contact{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:whitesmoke;
+} */
+
+.contact h1{
+    font-size: 5rem;
+   
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+
+.squares{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-envelope{
+    background-color: white;
+    color:rgba(160, 102, 236, 0.9);
+}
+
+
+
+
+.fa-github {
+    background: #2c4762;
+    color: white;
+  }

@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <title>Verification</title>
+    <link rel='icon'  href='small.ico'  type='image/x-ico'  />
+    <link rel="stylesheet" href="lock.css">
+    
+
+
+<script type="text/javascript">
+    function validate(){
+        if(document.getElementById("Qi").checked == true){
+            window.location.href = "index.html";
+        }
+        else alert("Wrong, You're not allowed to enter.");
+        }
+</script>
+
+
+
+</head>
+<body>
+    <div class="content">
+
+    <p><h1 class="question">What's my surname?</h1></p>
+
+    <form>
+      <input type="radio" id="Qi" name="name" value="Qi">
+      <label for="Qi">Qi</label><br>
+      <input type="radio" id="Chi" name="name" value="Chi">
+      <label for="Chi">Chi</label><br>
+      <input type="radio" id="Xi" name="name" value="Xi">
+      <label for="Xi">Xi</label>
+    </form>
+
+    <button onclick="validate();">Submit</button>
+
+    </div>
+
+</body>
+</html>
